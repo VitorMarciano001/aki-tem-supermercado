@@ -1,0 +1,15 @@
+body {
+    padding-top: 10px;
+}
+
+#img-carousel-border-radius{
+    border-radius: 10px;
+}
+
+.carousel-size{
+    width: 100%;
+}
+
+#carousel-img-size{
+    max-height: 530px;
+}
