@@ -23,3 +23,24 @@ body {
 .star-color{
     fill: darkorange;
 }
+
+.product_card_title{
+    height: 100px;
+}
+
+#card_decoration{
+    border-radius: 20px;
+    background-color: rgb(247, 51, 51);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.cart-button{
+    font-size: 24px; 
+    color: white;
+}
+#cart-button:hover{
+    font-size: 24px; 
+    color: black;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");

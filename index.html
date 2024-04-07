@@ -7,6 +7,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -130,26 +131,29 @@
     </section>
 
     <section>
-        <div class="container text-center">
-            <div class="row  justify-content-center">
+        <div class="container-fluid  text-center">
+            <div class="row">
                 <!-- Start Card -->
-                <div class="col-sm-4 p-2">
-                    <div class="card">
-                        <div class="card-body">
+                <div class="col-sm p-2">
+                    <div id="card_decoration" class="card">
+                        <div class="card-body ">
                             <!-- Image -->
                             <div class="row justify-content-center">
                                 <div class="col-sm-6 p-2">
-                                    <img src="image/brilhante.png" class="img-fluid" alt="Brilhante">
+                                    <img src="image/boneca.png" class="img-fluid" alt="Brilhante">
                                 </div>
                                 <!-- End Image -->
                                 <!-- Start Product Description -->
-                                <div class="row">
-                                    <p class="py-3 " style="text-align: justify;">
-                                        Brilhante Lava-Roupas em Pó Roupas
-                                        Brancas e Coloridas Limpeza
-                                        Total Pacote Tamanho Família 4 kg
-                                        (Pacote de 1)
-                                    </p>
+                                <div class="container-fluid product_card_title">
+                                    <div class="row">
+                                        <p class="py-3" style="text-align: justify;"><b style="color: white;">
+                                                Brilhante Lava-Roupas em Pó Roupas
+                                                Brancas e Coloridas Limpeza
+                                                Total Pacote Tamanho Família 4 kg
+                                                (Pacote de 1)
+                                            </b>
+                                        </p>
+                                    </div>
                                 </div>
                                 <!-- Ends Product Description -->
                                 <!-- Stars and price row -->
@@ -157,21 +161,22 @@
                                     <div class="col-sm-6 d-flex">
                                         <ul style="list-style: none; gap:5px;"
                                             class="list-group list-group-horizontal px-1">
-                                            <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                    height="24"></object></li>
-                                            <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                    height="24"></object></li>
-                                            <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                    height="24"></object></li>
-                                            <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                    height="24"></object></li>
-                                            <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                    height="24"></object></li>
+                                            <li>
+                                                <img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-unfilled.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-unfilled.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="col-sm-6 d-flex ">
                                         <span style="margin: 0 20px;">
-                                            <p>R$ 69,99</p>
+                                            <p style="color: white;"><b>R$</b> 69,99</p>
                                         </span>
 
                                     </div>
@@ -179,14 +184,16 @@
                                 <!-- End stars and price row -->
                                 <!-- Start Button Row -->
                                 <div class="row align-items-center">
-                                    <div class="col-sm-8">
-                                        <button type="button" class="btn btn-outline-primary" disabled>Primary
-                                            button</button>
+                                    <div class="col-sm-9">
+                                        <button style="width: 220px; height: 50px;" type="button"
+                                            class="btn btn-outline-light" enable>Detalhes</button>
                                     </div>
-                                    <div class="col-sm-4">
-                                        <button type="button" class="btn btn-outline-primary" disabled><object
-                                                type="image/svg+xml" data="svg/cart-plus.svg" width="24"
-                                                height="24"></object></button>
+                                    <div class="col-sm-3">
+                                        <button style="height: 50px;" type="button"
+                                            class="btn btn-outline-light cart-button" enable>
+                                            <i id="cart-button" class="bi-cart-plus-fill"></i>
+                                        </button>
+
                                     </div>
 
                                 </div>
@@ -196,237 +203,292 @@
                     </div>
                 </div>
                 <!-- End Card -->
-                <div class="col-sm-4 p-2">
-                    <!-- Start Card -->
-                    <div class="card">
-                        <div class="card-body">
+                <!-- Start Card -->
+                <div class="col-sm p-2">
+                    <div id="card_decoration" class="card">
+                        <div class="card-body ">
+                            <!-- Image -->
                             <div class="row justify-content-center">
                                 <div class="col-sm-6 p-2">
-                                    <img src="image/nuttela.png" class="img-fluid" alt="Brilhante">
+                                    <img src="image/garrafaCafe.png" class="img-fluid" alt="Brilhante">
                                 </div>
-                                <div class="row">
-                                    <p class="py-3 " style="text-align: justify;">
-                                        Brilhante Lava-Roupas em Pó Roupas
-                                        Brancas e Coloridas Limpeza
-                                        Total Pacote Tamanho Família 4 kg
-                                        (Pacote de 1)
-                                    </p>
+                                <!-- End Image -->
+                                <!-- Start Product Description -->
+                                <div class="container-fluid product_card_title">
+                                    <div class="row">
+                                        <p class="py-3" style="text-align: justify;"><b style="color: white;">
+                                                Brilhante Lava-Roupas em Pó Roupas
+                                                Brancas e Coloridas Limpeza
+                                                Total Pacote Tamanho Família 4 kg
+                                                (Pacote de 1)
+                                            </b>
+                                        </p>
+                                    </div>
                                 </div>
+                                <!-- Ends Product Description -->
                                 <!-- Stars and price row -->
                                 <div class="row">
                                     <div class="col-sm-6 d-flex">
                                         <ul style="list-style: none; gap:5px;"
                                             class="list-group list-group-horizontal px-1">
-                                            <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                    height="24"></object></li>
-                                            <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                    height="24"></object></li>
-                                            <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                    height="24"></object></li>
-                                            <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                    height="24"></object></li>
-                                            <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                    height="24"></object></li>
+                                            <li>
+                                                <img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-unfilled.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-unfilled.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="col-sm-6 d-flex ">
                                         <span style="margin: 0 20px;">
-                                            <p>R$ 69,99</p>
+                                            <p style="color: white;"><b>R$</b> 69,99</p>
                                         </span>
 
                                     </div>
                                 </div>
                                 <!-- End stars and price row -->
+                                <!-- Start Button Row -->
                                 <div class="row align-items-center">
-                                    <div class="col-sm-8">
-                                        <button type="button" class="btn btn-outline-primary" disabled>Primary
-                                            button</button>
+                                    <div class="col-sm-9">
+                                        <button style="width: 220px; height: 50px;" type="button"
+                                            class="btn btn-outline-light" enable>Detalhes</button>
                                     </div>
-                                    <div class="col-sm-4">
-                                        <button type="button" class="btn btn-outline-primary" disabled><object
-                                                type="image/svg+xml" data="svg/cart-plus.svg" width="24"
-                                                height="24"></object></button>
+                                    <div class="col-sm-3">
+                                        <button style="height: 50px;" type="button"
+                                            class="btn btn-outline-light cart-button" enable>
+                                            <i id="cart-button" class="bi-cart-plus-fill"></i>
+                                        </button>
+
                                     </div>
 
                                 </div>
+                                <!-- Start Button Row -->
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm">
-                        <!-- Start Card -->
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row justify-content-center">
-                                    <div class="col-sm-8">
-                                        <img src="image/brilhante.png" class="img-fluid" alt="Brilhante">
-                                    </div>
+                <!-- End Card -->
+                <!-- Start Card -->
+                <div class="col-sm p-2">
+                    <div id="card_decoration" class="card">
+                        <div class="card-body ">
+                            <!-- Image -->
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6 p-2">
+                                    <img src="image/lego.png" class="img-fluid" alt="Brilhante">
+                                </div>
+                                <!-- End Image -->
+                                <!-- Start Product Description -->
+                                <div class="container-fluid product_card_title">
                                     <div class="row">
-                                        <p class="py-3 " style="text-align: justify;">
-                                            Brilhante Lava-Roupas em Pó Roupas
-                                            Brancas e Coloridas Limpeza
-                                            Total Pacote Tamanho Família 4 kg
-                                            (Pacote de 1)
+                                        <p class="py-3" style="text-align: justify;"><b style="color: white;">
+                                                Brilhante Lava-Roupas em Pó Roupas
+                                                Brancas e Coloridas Limpeza
+                                                Total Pacote Tamanho Família 4 kg
+                                                (Pacote de 1)
+                                            </b>
                                         </p>
                                     </div>
-                                    <!-- Stars and price row -->
-                                    <div class="row">
-                                        <div class="col-sm-6 d-flex">
-                                            <ul style="list-style: none; gap:5px;"
-                                                class="list-group list-group-horizontal px-1">
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 d-flex ">
-                                            <span style="margin: 0 20px;">
-                                                <p>R$ 69,99</p>
-                                            </span>
-
-                                        </div>
+                                </div>
+                                <!-- Ends Product Description -->
+                                <!-- Stars and price row -->
+                                <div class="row">
+                                    <div class="col-sm-6 d-flex">
+                                        <ul style="list-style: none; gap:5px;"
+                                            class="list-group list-group-horizontal px-1">
+                                            <li>
+                                                <img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-unfilled.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-unfilled.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <!-- End stars and price row -->
-                                    <div class="row align-items-center">
-                                        <div class="col-sm-8">
-                                            <button type="button" class="btn btn-outline-primary" disabled>Primary
-                                                button</button>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <button type="button" class="btn btn-outline-primary" disabled><object
-                                                    type="image/svg+xml" data="svg/cart-plus.svg" width="24"
-                                                    height="24"></object></button>
-                                        </div>
+                                    <div class="col-sm-6 d-flex ">
+                                        <span style="margin: 0 20px;">
+                                            <p style="color: white;"><b>R$</b> 69,99</p>
+                                        </span>
 
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <!-- Start Card -->
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row justify-content-center">
-                                    <div class="col-sm-8">
-                                        <img src="image/brilhante.png" class="img-fluid" alt="Brilhante">
+                                <!-- End stars and price row -->
+                                <!-- Start Button Row -->
+                                <div class="row align-items-center">
+                                    <div class="col-sm-9">
+                                        <button style="width: 220px; height: 50px;" type="button"
+                                            class="btn btn-outline-light" enable>Detalhes</button>
                                     </div>
-                                    <div class="row">
-                                        <p class="py-3 " style="text-align: justify;">
-                                            Brilhante Lava-Roupas em Pó Roupas
-                                            Brancas e Coloridas Limpeza
-                                            Total Pacote Tamanho Família 4 kg
-                                            (Pacote de 1)
-                                        </p>
-                                    </div>
-                                    <!-- Stars and price row -->
-                                    <div class="row">
-                                        <div class="col-sm-6 d-flex">
-                                            <ul style="list-style: none; gap:5px;"
-                                                class="list-group list-group-horizontal px-1">
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 d-flex ">
-                                            <span style="margin: 0 20px;">
-                                                <p>R$ 69,99</p>
-                                            </span>
-
-                                        </div>
-                                    </div>
-                                    <!-- End stars and price row -->
-                                    <div class="row align-items-center">
-                                        <div class="col-sm-8">
-                                            <button type="button" class="btn btn-outline-primary" disabled>Primary
-                                                button</button>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <button type="button" class="btn btn-outline-primary" disabled><object
-                                                    type="image/svg+xml" data="svg/cart-plus.svg" width="24"
-                                                    height="24"></object></button>
-                                        </div>
+                                    <div class="col-sm-3">
+                                        <button style="height: 50px;" type="button"
+                                            class="btn btn-outline-light cart-button" enable>
+                                            <i id="cart-button" class="bi-cart-plus-fill"></i>
+                                        </button>
 
                                     </div>
+
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <!-- Start Card -->
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row justify-content-center">
-                                    <div class="col-sm-8">
-                                        <img src="image/brilhante.png" class="img-fluid" alt="Brilhante">
-                                    </div>
-                                    <div class="row">
-                                        <p class="py-3 " style="text-align: justify;">
-                                            Brilhante Lava-Roupas em Pó Roupas
-                                            Brancas e Coloridas Limpeza
-                                            Total Pacote Tamanho Família 4 kg
-                                            (Pacote de 1)
-                                        </p>
-                                    </div>
-                                    <!-- Stars and price row -->
-                                    <div class="row">
-                                        <div class="col-sm-6 d-flex">
-                                            <ul style="list-style: none; gap:5px;"
-                                                class="list-group list-group-horizontal px-1">
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                                <li><object type="image/svg+xml" data="svg/star-fill.svg" width="24"
-                                                        height="24"></object></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6 d-flex ">
-                                            <span style="margin: 0 20px;">
-                                                <p>R$ 69,99</p>
-                                            </span>
-
-                                        </div>
-                                    </div>
-                                    <!-- End stars and price row -->
-                                    <div class="row align-items-center">
-                                        <div class="col-sm-8">
-                                            <button type="button" class="btn btn-outline-primary" disabled>Primary
-                                                button</button>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <button type="button" class="btn btn-outline-primary" disabled><object
-                                                    type="image/svg+xml" data="svg/cart-plus.svg" width="24"
-                                                    height="24"></object></button>
-                                        </div>
-
-                                    </div>
-                                </div>
+                                <!-- Start Button Row -->
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- End Card -->
             </div>
+            <!-- Second line start -->
+            <div class="row justify-content-center">
+                <!-- Start Card -->
+                <div class="col-sm-4 p-2">
+                    <div id="card_decoration" class="card">
+                        <div class="card-body ">
+                            <!-- Image -->
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6 p-2">
+                                    <img src="image/ventilador.png" class="img-fluid" alt="Brilhante">
+                                </div>
+                                <!-- End Image -->
+                                <!-- Start Product Description -->
+                                <div class="container-fluid product_card_title">
+                                    <div class="row">
+                                        <p class="py-3" style="text-align: justify;"><b style="color: white;">
+                                                Brilhante Lava-Roupas em Pó Roupas
+                                                Brancas e Coloridas Limpeza
+                                                Total Pacote Tamanho Família 4 kg
+                                                (Pacote de 1)
+                                            </b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Ends Product Description -->
+                                <!-- Start stars and price row -->
+                                <div class="row">
+                                    <div class="col-sm-6 d-flex">
+                                        <ul style="list-style: none; gap:5px;"
+                                            class="list-group list-group-horizontal px-1">
+                                            <li>
+                                                <img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-unfilled.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-unfilled.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 d-flex ">
+                                        <span style="margin: 0 20px;">
+                                            <p style="color: white;"><b>R$</b> 69,99</p>
+                                        </span>
+
+                                    </div>
+                                </div>
+                                <!-- End stars and price row -->
+                                <!-- Start Button Row -->
+                                <div class="row align-items-center">
+                                    <div class="col-sm-9">
+                                        <button style="width: 220px; height: 50px;" type="button"
+                                            class="btn btn-outline-light" enable>Detalhes</button>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <button style="height: 50px;" type="button"
+                                            class="btn btn-outline-light cart-button" enable>
+                                            <i id="cart-button" class="bi-cart-plus-fill"></i>
+                                        </button>
+
+                                    </div>
+
+                                </div>
+                                <!-- Start Button Row -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Card -->
+                <!-- Start Card -->
+                <div class="col-sm-4 p-2">
+                    <div id="card_decoration" class="card">
+                        <div class="card-body ">
+                            <!-- Image -->
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6 p-2">
+                                    <img src="image/liquidificador.png" class="img-fluid" alt="Brilhante">
+                                </div>
+                                <!-- End Image -->
+                                <!-- Start Product Description -->
+                                <div class="container-fluid product_card_title">
+                                    <div class="row">
+                                        <p class="py-3" style="text-align: justify;"><b style="color: white;">
+                                                Brilhante Lava-Roupas em Pó Roupas
+                                                Brancas e Coloridas Limpeza
+                                                Total Pacote Tamanho Família 4 kg
+                                                (Pacote de 1)
+                                            </b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Ends Product Description -->
+                                <!-- Start stars and price row -->
+                                <div class="row">
+                                    <div class="col-sm-6 d-flex">
+                                        <ul style="list-style: none; gap:5px;"
+                                            class="list-group list-group-horizontal px-1">
+                                            <li>
+                                                <img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-filed.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-unfilled.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                            <li><img src="svg/star-unfilled.svg" alt="Bootstrap" width="24" height="24">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 d-flex ">
+                                        <span style="margin: 0 20px;">
+                                            <p style="color: white;"><b>R$</b> 69,99</p>
+                                        </span>
+
+                                    </div>
+                                </div>
+                                <!-- End stars and price row -->
+                                <!-- Start Button Row -->
+                                <div class="row align-items-center">
+                                    <div class="col-sm-9">
+                                        <button style="width: 220px; height: 50px;" type="button"
+                                            class="btn btn-outline-light" enable>Detalhes
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <button style="height: 50px;" type="button"
+                                            class="btn btn-outline-light cart-button" enable>
+                                            <i id="cart-button" class="bi-cart-plus-fill"></i>
+                                        </button>
+
+                                    </div>
+
+                                </div>
+                                <!-- Start Button Row -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Card -->
+            </div>
+        </div>
     </section>
 </body>
 
